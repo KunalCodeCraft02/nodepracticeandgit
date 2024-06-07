@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Welcome to my Web version <%=2+1%>
+    </h1>
+
+    <form action="/create" method="post">
+        <input type="text" placeholder="enter name" name="username">
+        <textarea name="detail" id="textArea"></textarea>
+        <button value="create task">create</button>
+        
+    </form>
+
+    <% if(files.length> 0){ %>
+        <% files.forEach(function(val){ %>
+            <div class="con">
+                <h1>The name of user is <%= val %></h1>
+                <a href="/file/<%= val %>">read More</a>
+                <a href="/edit/<%= val %>">edit</a>
+            </div>
+            <% }) %>
+                <% } else{ %>
+                    <h3>NO TASK YET</h3>
+                    <% } %>
+
+
+
+                        <script src="/javascript/india.js"></script>
+</body>
+
+</html>

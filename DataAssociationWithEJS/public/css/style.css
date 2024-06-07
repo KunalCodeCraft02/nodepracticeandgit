@@ -1,0 +1,76 @@
+@font-face {
+    font-family: re;
+    src: url(../asstes/l\ \(1\));
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    font-family: re;
+}
+body h2{
+    padding-bottom: 1vw;
+}
+
+.container {
+    height: 400px;
+    width: 400px;
+    background: #64A7BF;
+    background: linear-gradient(135deg, #64A7BF, #37A03F);
+    border-radius: 1.5rem;
+}
+form{
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+input{
+    width: 20vw;
+    margin: 4px;
+    height: 30px;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    border: 1px solid black;
+    color: white;
+}
+input::placeholder{
+    color: white;
+    text-align: center;
+}
+.btn{
+    margin-top: 1vw;
+    padding: 6px 13px;
+    border-radius: 6px;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+    background-color: yellow;
+}
+.btns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btns button{
+    padding: 6px 18px;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+    border-radius: 6px;
+    background-color: yellow;
+}
